@@ -2,19 +2,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enmanuel Segura|Portafolio</title>
+    <title>Enmanuel Segura | Portafolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="flexbox.css">
 </head>
 <body>
-    <header>
-        <nav>
 
+    <!-- barra de navegacion -->
+    <header>
+        <nav class="barra__navegacion">
+        <ul class="enlaces__navegacion">
+            <li></li><!-- colocar logo aqui -->
+            <li>
+                <a href="#sobre mi">Sobre mí</a>
+            </li>
+            <li>
+                <a href="#habilidades">Habilidades</a>
+            </li>
+            <li>
+                <a href="#proyectos">Proyectos</a>
+            </li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
         </nav>
     </header>
+
+    <!-- cuerpo -->
     <main>
 
+        <!-- presentacion -->
+        <section class="presentacion">
+            <img src="./assets/foto-presentacion.jpeg" alt="Foto de Enmanuel Segura">
+            <h1>Enmanuel Segura</h1>
+            <strong>Desarrollador Front-end</strong>
+
+            <div class="sobre__mi" id="sobre mi">
+                <h2>Sobre mi</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, quisquam ab quos laborum totam quas sequi, sit minus assumenda
+                iure quo delectus atque accusantium reiciendis, obcaecati necessitatibus recusandae sint. Laborum?</p>
+            </div>
+            </section>
+
+            <!-- habilidades -->
+            <section id="habilidades" class="habilidades">
+                <h2>Habilidades</h2>
+                <div>
+                    <ul class="lista__iconos--habilidades">
+                        <li><img src="./assets/icono-hover-javascript.svg" alt="Icono JavaScript" width="70">JavaScript básico</li>
+                        <li><img src="./assets/icono-hover-html.svg" alt="Icono HTML5" width="70" ="2px">HTML básico</li>
+                        <li><img src="./assets/icono-hover-css.svg" alt="Icono CSS3" width="70">Css básico</li>
+                        <li><img src="./assets/icono-git-hover.svg" alt="Icono Git" width="70">Git Intermedio</li>
+                        <li><img src="./assets/icono-github-inicial.svg" alt="Icono Git" width="70">Github básico</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Proyectos -->
+            <section id="proyectos" class="proyectos">
+                <h2>Proyectos</h2>
+                <div>
+                    <ul class="lista__proyectos">
+                        <div>
+                            <iframe src="https://mercaderjs.github.io/aluraplay/" frameborder="0"></iframe>
+                        </div>
+                        <div>
+                            <iframe src="" frameborder="0"></iframe>
+                        </div>
+                        <div>
+                            <iframe src="" frameborder="0"></iframe>
+                        </div>
+                        <div>
+                            <iframe src="" frameborder="0"></iframe>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+        
     </main>
-    <footer>
+
+    <!-- pie de pagina -->
+    <footer class="footer">
+        <!-- NOTA AÑADIR ICONOS DE CONTACTO -->
+        <ul id="contacto" class="lista__contacto">
+            <li>Linkedin</li>
+            <li>Correo</li>
+            <li>Github</li>
+        </ul>
         
     </footer>
+    
 </body>
 </html>
